@@ -1,5 +1,11 @@
+# revision 23699
+# category Package
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
+# catalog-version undef
 Name:		texlive-misc
-Version:	20111102
+Version:	20111103
 Release:	1
 Summary:	TeXLive misc package
 Group:		Publishing
@@ -83,6 +89,7 @@ TeXLive misc package.
 %{_texmfdistdir}/tex/plain/misc/pdfcolor.tex
 %{_texmfdistdir}/tex/plain/misc/tugboat.def
 %{_texmfdistdir}/tex/plain/misc/xepsf.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -93,3 +100,5 @@ TeXLive misc package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts omega tex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
