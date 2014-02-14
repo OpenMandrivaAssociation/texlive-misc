@@ -1,12 +1,12 @@
-# revision 24955
+# revision 32910
 # category Package
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-misc
-Version:	20120109
-Release:	5
+Version:	20140214
+Release:	1
 Summary:	TeXLive misc package
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -30,46 +30,14 @@ TeXLive misc package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/fonts/source/public/misc/black.mf
-%{_texmfdistdir}/fonts/source/public/misc/blackaps.mf
 %{_texmfdistdir}/fonts/source/public/misc/blackcx.mf
-%{_texmfdistdir}/fonts/source/public/misc/blackimagen.mf
-%{_texmfdistdir}/fonts/source/public/misc/blacklino.mf
-%{_texmfdistdir}/fonts/source/public/misc/blacklj.mf
-%{_texmfdistdir}/fonts/source/public/misc/cmman.mf
-%{_texmfdistdir}/fonts/source/public/misc/gray.mf
-%{_texmfdistdir}/fonts/source/public/misc/grayaps.mf
 %{_texmfdistdir}/fonts/source/public/misc/graycx.mf
 %{_texmfdistdir}/fonts/source/public/misc/grayf.mf
-%{_texmfdistdir}/fonts/source/public/misc/grayimagen.mf
-%{_texmfdistdir}/fonts/source/public/misc/grayimagen3.mf
-%{_texmfdistdir}/fonts/source/public/misc/grayimagenlight.mf
-%{_texmfdistdir}/fonts/source/public/misc/graylj.mf
 %{_texmfdistdir}/fonts/source/public/misc/manfnt.mf
-%{_texmfdistdir}/fonts/source/public/misc/mfman.mf
-%{_texmfdistdir}/fonts/source/public/misc/oneone.mf
-%{_texmfdistdir}/fonts/source/public/misc/random.mf
 %{_texmfdistdir}/fonts/source/public/misc/slant.mf
-%{_texmfdistdir}/fonts/source/public/misc/slantaps4.mf
 %{_texmfdistdir}/fonts/source/public/misc/slantcx4.mf
 %{_texmfdistdir}/fonts/source/public/misc/slantcx6.mf
-%{_texmfdistdir}/fonts/source/public/misc/slantimagen4.mf
-%{_texmfdistdir}/fonts/source/public/misc/slantimagen6.mf
-%{_texmfdistdir}/fonts/source/public/misc/slantlino4.mf
-%{_texmfdistdir}/fonts/source/public/misc/slantlj4.mf
 %{_texmfdistdir}/fonts/source/public/misc/slantlj6.mf
-%{_texmfdistdir}/fonts/tfm/public/misc/black.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/blackcx.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/cmman.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/gray.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/graycx.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/grayimagen3.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/manfnt.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/oneone.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/slantcx4.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/slantcx6.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/slantlj4.tfm
-%{_texmfdistdir}/fonts/tfm/public/misc/slantlj6.tfm
 %{_texmfdistdir}/omega/ocp/misc/ebcdic.ocp
 %{_texmfdistdir}/omega/ocp/misc/id.ocp
 %{_texmfdistdir}/omega/otp/misc/ebcdic.otp
@@ -91,21 +59,3 @@ TeXLive misc package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts omega tex %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120109-1
-+ Revision: 758988
-- Update to latest upstream release
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111103-2
-+ Revision: 754016
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111103-1
-+ Revision: 719041
-- texlive-misc
-- texlive-misc
-- texlive-misc
-- texlive-misc
-
