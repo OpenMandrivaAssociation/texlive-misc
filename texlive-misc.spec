@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-misc
 Version:	20140214
-Release:	3
+Release:	4
 Summary:	TeXLive misc package
 Group:		Publishing
 URL:		http://tug.org/texlive
