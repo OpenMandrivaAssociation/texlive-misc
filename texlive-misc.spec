@@ -9,7 +9,7 @@ Version:	20140214
 Release:	7
 Summary:	TeXLive misc package
 Group:		Publishing
-URL:		http://tug.org/texlive
+URL:		https://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/misc.tar.xz
 BuildArch:	noarch
